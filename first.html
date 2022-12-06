@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keralalottery</title>
+</head>
+
+<body>
+
+    <button onclick="show()">next date</button>
+    <a href="http://103.251.43.52/lottery/viewlotisresult.php"
+        onclick="location.href=this.href+'?drawserial='+val;return false;">
+        click me
+    </a>
+
+    <script>
+        var val = 73989;
+
+
+        function show() {
+
+            var now = new Date();
+
+            for (const d = new Date("2022-12-01"); d <= now; d.setDate(d.getDate() + 1)) {
+
+
+                val = val + 1;
+
+
+
+
+
+            }
+        }
+
+    </script>
+
+
+
+</html>
